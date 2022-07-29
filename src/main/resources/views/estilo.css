@@ -1,0 +1,21 @@
+body
+{
+	font:100% Lucida Sans, Verdana;
+	margin: 15px;
+	line-height: 30px;
+}
+
+.container
+{
+	xmin-width:900px;
+}
+
+#topo
+{
+	border-radius: 8px;
+	margin: 5px;
+	background-color: #04AA6D;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
