@@ -13,9 +13,15 @@ public class Categoria
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String ativo;
 	private String descricao;
+	private String ativo;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getDescricao() {
 		return descricao;
 	}
@@ -28,10 +34,5 @@ public class Categoria
 	public void setAtivo(String ativo) {
 		this.ativo = ativo;
 	}
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	
 }
