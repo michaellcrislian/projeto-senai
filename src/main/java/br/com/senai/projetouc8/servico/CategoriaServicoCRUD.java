@@ -19,4 +19,9 @@ public class CategoriaServicoCRUD implements CategoriaServico
 	 {
 		 return (List<Categoria>) repository.findAll();
 	 }
+	 
+	 public void apagarCategoria(Integer id)
+	 {
+		 repository.deleteById(id);
+	 }
 }
