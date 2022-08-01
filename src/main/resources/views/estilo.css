@@ -19,3 +19,40 @@ body
 	color: white;
 	text-align: center;
 }
+
+#corpo
+{
+	position: relative;
+	overflow: auto;
+	margin: 5px;
+}
+
+#menu
+{
+	width: 220px;
+	float: left;
+	background-color: #04AA6D;
+	color: white;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+#conteudo
+{
+	background-color: #04AA6D;
+	color: white;
+	padding: 5px;
+	border-radius: 8px;
+	padding-left: 60px;
+	margin: 0 235px;
+}
+
+#rodape
+{
+	border-radius: 8px;
+	margin: 5px;
+	background-color: #04AA6D;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}

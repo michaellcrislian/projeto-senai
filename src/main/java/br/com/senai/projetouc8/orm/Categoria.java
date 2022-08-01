@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="grupos")
-public class Grupo 
+public class Categoria 
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
