@@ -13,10 +13,10 @@ public class CategoriaController
 	@Autowired
 	private CategoriaServico servico;
 	
-	@GetMapping({"/grupo","/"})
+	@GetMapping({"/categoria","/"})
 	public String listarCategorias(Model modelo)
 	{
-		modelo.addAttribute("grupo", servico.listarCategorias());
-		return "grupo";
+		modelo.addAttribute("categoria", servico.listarCategorias());
+		return "categoria";
 	}
 }

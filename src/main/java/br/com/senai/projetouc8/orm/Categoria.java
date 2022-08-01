@@ -7,13 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="grupos")
+@Table(name="categorias")
 public class Categoria 
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String grupo;
 	private String ativo;
 	private String descricao;
 	
@@ -34,11 +33,5 @@ public class Categoria
 	}
 	public void setId(Integer id) {
 		this.id = id;
-	}
-	public String getGrupo() {
-		return grupo;
-	}
-	public void setGrupo(String grupo) {
-		this.grupo = grupo;
 	}
 }
