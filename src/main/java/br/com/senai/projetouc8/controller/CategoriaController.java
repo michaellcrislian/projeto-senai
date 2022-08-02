@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import br.com.senai.projetouc8.orm.Categoria;
 import br.com.senai.projetouc8.servico.CategoriaServico;
 
 @Controller
@@ -26,5 +27,13 @@ public class CategoriaController
 	{
 		servico.apagarCategoria(id);
 		return "redirect:/categoria";
+	}
+	
+	@GetMapping("/categoria/adicionar")
+	public String adicionarCategoria(Model modelo)
+	{
+		Categoria categoria = new Categoria();
+		modelo.addAttribute("categoria", categoria);
+		return "formCategoria";
 	}
 }

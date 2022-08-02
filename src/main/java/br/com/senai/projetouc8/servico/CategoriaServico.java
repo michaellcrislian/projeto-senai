@@ -9,4 +9,5 @@ public interface CategoriaServico
 	public List<Categoria> listarCategorias();
 	
 	public void apagarCategoria(Integer id);
+	
 }
