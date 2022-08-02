@@ -24,4 +24,9 @@ public class CategoriaServicoCRUD implements CategoriaServico
 	 {
 		 repository.deleteById(id);
 	 }
+	 
+	 public Categoria salvarCategoria(Categoria categoria)
+	 {
+		 return repository.save(categoria);
+	 }
 }

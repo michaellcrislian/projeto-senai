@@ -10,4 +10,6 @@ public interface CategoriaServico
 	
 	public void apagarCategoria(Integer id);
 	
+	public Categoria salvarCategoria(Categoria categoria);
+	
 }
