@@ -29,4 +29,14 @@ public class CategoriaServicoCRUD implements CategoriaServico
 	 {
 		 return repository.save(categoria);
 	 }
+	 
+	 public Categoria consultarCategoriaId(Integer id)
+	 {
+		 return repository.findById(id).get(); 
+	 }
+	 
+	 public Categoria atualizarCategoria(Categoria categoria)
+	 {
+		 return repository.save(categoria);
+	 }
 }
